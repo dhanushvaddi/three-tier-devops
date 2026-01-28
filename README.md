@@ -1,4 +1,4 @@
-# 🚀 Three-Tier DevOps Project
+# Three-Tier DevOps Project
 
 This repository demonstrates a **production-style Three-Tier Architecture**
 implemented using **Docker, Kubernetes, CI/CD, and Monitoring** with
@@ -9,7 +9,7 @@ architecture understanding, and **interview readiness**.
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 User
 │
