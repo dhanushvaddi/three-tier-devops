@@ -1,7 +1,7 @@
 # 🚀 Three-Tier DevOps Project
 
 This repository demonstrates a **production-style Three-Tier Architecture**
-implemented using **Docker, Kubernetes, CI/CD, and Monitoring** with only
+implemented using **Docker, Kubernetes, CI/CD, and Monitoring** with
 **free and open-source tools**.
 
 This project is designed for **hands-on DevOps learning**, real-world
@@ -23,7 +23,7 @@ Backend (Python Flask API)
 Database (PostgreSQL)
 
 
-Monitoring Flow:
+### Monitoring Flow
 Application / Containers
 ▼
 Prometheus
@@ -31,7 +31,7 @@ Prometheus
 Grafana
 
 
-CI/CD Flow:
+### CI/CD Flow
 GitHub → Jenkins → Docker Image → Kubernetes
 
 
@@ -108,7 +108,7 @@ Password: admin
 Create namespace and deploy all resources:
 
 kubectl apply -f k8s/
-Check resources:
+Verify resources:
 
 kubectl get all -n three-tier
 Access frontend (NodePort):
@@ -127,7 +127,7 @@ Image push to container registry
 
 Deployment to Kubernetes
 
-The pipeline is defined in:
+Pipeline definition:
 
 Jenkinsfile
 📊 Monitoring
@@ -140,13 +140,13 @@ Easily extendable with Alertmanager for alerts
 🎯 Project Highlights
 Implements Three-Tier Architecture
 
-Uses Docker Compose for local development
+Docker Compose for local development
 
-Uses Kubernetes for container orchestration
+Kubernetes for container orchestration
 
-CI pipeline with Jenkins
+CI pipeline using Jenkins
 
-Security scanning using Trivy
+Security scanning with Trivy
 
 Monitoring with Prometheus & Grafana
 
