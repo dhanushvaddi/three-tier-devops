@@ -86,7 +86,7 @@ three-tier-devops/
 ## Run Application Using Docker Compose
 
 Start all services:
-```bash
+
 docker compose up -d
 Stop services:
 
