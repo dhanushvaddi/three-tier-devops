@@ -37,7 +37,7 @@ GitHub → Jenkins → Docker Image → Kubernetes
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 three-tier-devops/
 │
@@ -70,7 +70,7 @@ three-tier-devops/
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Frontend:** Nginx
 - **Backend:** Python (Flask)
@@ -83,7 +83,7 @@ three-tier-devops/
 
 ---
 
-## ▶️ Run Application Using Docker Compose
+## Run Application Using Docker Compose
 
 Start all services:
 ```bash
@@ -94,7 +94,8 @@ docker compose stop
 Remove containers:
 
 docker compose down
-🌐 Access URLs (Docker Compose)
+
+**Access URLs (Docker Compose)**
 Service	URL
 Frontend	http://localhost
 Backend	http://localhost:5000
@@ -104,7 +105,8 @@ Grafana Default Login:
 
 Username: admin
 Password: admin
-☸️ Deploy Application to Kubernetes
+
+**Deploy Application to Kubernetes**
 Create namespace and deploy all resources:
 
 kubectl apply -f k8s/
@@ -114,7 +116,8 @@ kubectl get all -n three-tier
 Access frontend (NodePort):
 
 minikube service frontend -n three-tier
-🔄 CI/CD Pipeline (Jenkins)
+
+**CI/CD Pipeline (Jenkins)**
 Pipeline stages:
 
 GitHub code checkout
@@ -128,16 +131,16 @@ Image push to container registry
 Deployment to Kubernetes
 
 Pipeline definition:
+**Jenkinsfile**
 
-Jenkinsfile
-📊 Monitoring
+**Monitoring**
 Prometheus collects metrics from containers and services
 
 Grafana visualizes CPU, memory, and application metrics
 
 Easily extendable with Alertmanager for alerts
 
-🎯 Project Highlights
+**Project Highlights**
 Implements Three-Tier Architecture
 
 Docker Compose for local development
